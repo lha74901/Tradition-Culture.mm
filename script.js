@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navigation scroll effect
+    // DOM Elements
     const navbar = document.querySelector('.navbar');
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
+    const sections = document.querySelectorAll('.section');
+    const cards = document.querySelectorAll('.place-card, .food-card, .culture-card');
 
-    // Scroll handler
+    // Navbar scroll effect
     function handleScroll() {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -17,12 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mobile menu toggle
     menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+            menuBtn.classList.remove('active');
             navLinks.classList.remove('active');
         }
     });
@@ -34,13 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
             const target = document.querySelector(this.getAttribute('href'));
             
             if (target) {
-                const offsetTop = target.offsetTop - navbar.offsetHeight;
+                const headerOffset = navbar.offsetHeight;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
                 window.scrollTo({
-                    top: offsetTop,
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
-                
+
                 // Close mobile menu after clicking
+                menuBtn.classList.remove('active');
                 navLinks.classList.remove('active');
             }
         });
@@ -53,38 +61,43 @@ document.addEventListener('DOMContentLoaded', function() {
         threshold: 0.1
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
+                entry.target.classList.add('visible');
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    };
 
-    // Observe all section content
-    document.querySelectorAll('.section-content').forEach(section => {
-        observer.observe(section);
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+        section.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
     });
 
-    // Add parallax effect to sections with parallax class
-    window.addEventListener('scroll', () => {
-        const parallaxSections = document.querySelectorAll('.parallax');
+    // Parallax effect for sections with parallax class
+    const parallaxSections = document.querySelectorAll('.parallax');
+    
+    function handleParallax() {
         parallaxSections.forEach(section => {
             const scrolled = window.pageYOffset;
             const rate = scrolled * 0.5;
             section.style.backgroundPositionY = `${rate}px`;
         });
-    });
+    }
 
-    // Add hover effect for cards
-    const cards = document.querySelectorAll('.place-card, .food-card, .culture-card');
+    window.addEventListener('scroll', handleParallax);
+
+    // Card hover effects
     cards.forEach(card => {
-        card.addEventListener('mouseover', function() {
+        card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px)';
         });
         
-        card.addEventListener('mouseout', function() {
+        card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0)';
         });
     });
@@ -101,4 +114,23 @@ document.addEventListener('DOMContentLoaded', function() {
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
         document.body.appendChild(script);
     }
+
+    // Initialize any dynamic content
+    function initializePage() {
+        // Add fade-in class to appropriate elements
+        document.querySelectorAll('.section-content').forEach(content => {
+            content.classList.add('fade-in');
+        });
+
+        // Initialize any page-specific animations
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            heroContent.querySelectorAll('*').forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.2}s`;
+            });
+        }
+    }
+
+    // Run initialization
+    initializePage();
 });
