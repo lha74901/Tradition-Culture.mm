@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>သမိုင်း - မြန်မာနိုင်ငံ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <title>မြန်မာနိုင်ငံ - သမိုင်း</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -14,179 +12,39 @@
             <div class="logo">
                 <h1>မြန်မာနိုင်ငံ</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">ပင်မစာမျက်နှာ</a></li>
-                <li><a href="history.html" class="active">သမိုင်း</a></li>
-                <li><a href="culture.html">ယဉ်ကျေးမှု</a></li>
-                <li><a href="places.html">နေရာဒေသများ</a></li>
-                <li><a href="food.html">အစားအသောက်</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="index.html">ပင်မစာမျက်နှာ</a>
+                <a href="history.html">သမိုင်း</a>
+                <a href="culture.html">ယဉ်ကျေးမှု</a>
+                <a href="places.html">နေရာဒေသများ</a>
+                <a href="food.html">အစားအသောက်</a>
+            </div>
             <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="page-header parallax">
-            <div class="header-content">
-                <h1>မြန်မာ့သမိုင်း</h1>
-                <p>ရာစုနှစ်ပေါင်းများစွာ သက်တမ်းရှိသော ယဉ်ကျေးမှုအမွေအနှစ်</p>
-            </div>
-        </section>
-
-        <section class="section">
+        <section id="history" class="section">
             <div class="section-content">
-                <div class="history-intro">
-                    <h2 class="section-title">သမိုင်းအကျဉ်း</h2>
-                    <p class="intro-text">
-                        မြန်မာနိုင်ငံ၏ သမိုင်းသည် ပုဂံ၊ အင်းဝ၊ ကုန်းဘောင်ခေတ်များကဲ့သို့ 
-                        ထင်ရှားသော ခေတ်ကာလများဖြင့် ပြည့်နှက်နေပါသည်။ 
-                        ဗုဒ္ဓဘာသာနှင့် ရှေးဟောင်းယဉ်ကျေးမှုများ ပေါင်းစပ်ထားသော 
-                        ကမ္ဘာ့အမွေအနှစ်များစွာကို ပိုင်ဆိုင်ထားပါသည်။
-                    </p>
-                </div>
-
-                <div class="history-timeline">
-                    <h3 class="timeline-title">အရေးကြီးသော သမိုင်းကာလများ</h3>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="timeline-date">၁၀၄၄-၁၂၈၇</div>
-                                <h4>ပုဂံခေတ်</h4>
-                                <img src="/api/placeholder/400/250" alt="ပုဂံခေတ်" class="timeline-image">
-                                <p>
-                                    အနော်ရထာမင်းကြီးလက်ထက်တွင် ဗုဒ္ဓဘာသာ ထွန်းကားခဲ့ပြီး၊ 
-                                    ပုဂံပြည်ကို ရွှေထီးရွှေနန်းတည်ခဲ့ပါသည်။ ထိုခေတ်တွင် ဘုရား၊ 
-                                    စေတီပုထိုးပေါင်း ၄၀၀၀ ကျော် တည်ထားခဲ့ပါသည်။
-                                </p>
-                                <ul class="timeline-facts">
-                                    <li><i class="fas fa-landmark"></i> စေတီပေါင်း ၄၀၀၀ ကျော်</li>
-                                    <li><i class="fas fa-scroll"></i> ပထမမြန်မာနိုင်ငံတော်</li>
-                                    <li><i class="fas fa-dharmachakra"></i> ဗုဒ္ဓဘာသာ ထွန်းကားခြင်း</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="timeline-date">၁၃၆၄-၁၅၅၅</div>
-                                <h4>အင်းဝခေတ်</h4>
-                                <img src="/api/placeholder/400/250" alt="အင်းဝခေတ်" class="timeline-image">
-                                <p>
-                                    မြန်မာစာပေနှင့် ယဉ်ကျေးမှု အထွတ်အထိပ်ရောက်ခဲ့သော ခေတ်ဖြစ်သည်။ 
-                                    ပညာရှိများ၊ စာဆိုတော်များ ပေါ်ထွန်းခဲ့ပြီး၊ လက်ရာမြောက် 
-                                    စာပေများ ရေးသားခဲ့ကြသည်။
-                                </p>
-                                <ul class="timeline-facts">
-                                    <li><i class="fas fa-book"></i> စာပေထွန်းကားခြင်း</li>
-                                    <li><i class="fas fa-university"></i> ပညာရေးဖွံ့ဖြိုးခြင်း</li>
-                                    <li><i class="fas fa-paint-brush"></i> အနုပညာဖွံ့ဖြိုးခြင်း</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="timeline-date">၁၇၅၂-၁၈၈၅</div>
-                                <h4>ကုန်းဘောင်ခေတ်</h4>
-                                <img src="/api/placeholder/400/250" alt="ကုန်းဘောင်ခေတ်" class="timeline-image">
-                                <p>
-                                    အလောင်းမင်းတရားကြီး တည်ထောင်ခဲ့သော နောက်ဆုံးမြန်မာ့ရာဇာဝင် 
-                                    မင်းဆက်ဖြစ်သည်။ စီးပွားရေး၊ ယဉ်ကျေးမှု အထွတ်အထိပ်သို့ 
-                                    ရောက်ရှိခဲ့သည်။
-                                </p>
-                                <ul class="timeline-facts">
-                                    <li><i class="fas fa-crown"></i> နောက်ဆုံးမြန်မာမင်းဆက်</li>
-                                    <li><i class="fas fa-coins"></i> စီးပွားရေးဖွံ့ဖြိုးခြင်း</li>
-                                    <li><i class="fas fa-monument"></i> ယဉ်ကျေးမှုထွန်းကားခြင်း</li>
-                                </ul>
-                            </div>
+                <h2 class="section-title">သမိုင်းအကျဉ်း</h2>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <p>မြန်မာနိုင်ငံသည် ရှေးယခင်ကတည်းက ပုဂံ၊ အင်းဝ၊ ကုန်းဘောင် စသည့်ခေတ်များဖြင့် သမိုင်းကြောင်းရှည်ကြာခဲ့ပါသည်။</p>
+                        
+                        <div class="fact-box">
+                            <h3>အချက်အလက်များ</h3>
+                            <ul>
+                                <li>နိုင်ငံတည်နေရာ - အရှေ့တောင်အာရှ</li>
+                                <li>မြို့တော် - နေပြည်တော်</li>
+                                <li>အကြီးဆုံးမြို့ - ရန်ကုန်မြို့</li>
+                                <li>လူဦးရေ - ၅၄ သန်းခန့်</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="historical-sites">
-                    <h3 class="section-title">သမိုင်းဝင်နေရာများ</h3>
-                    <div class="sites-grid">
-                        <div class="site-card">
-                            <img src="/api/placeholder/300/200" alt="ပုဂံဘုရားများ">
-                            <div class="card-content">
-                                <h4>ပုဂံဘုရားများ</h4>
-                                <p>ကမ္ဘာ့အမွေအနှစ် စာရင်းဝင် ရှေးဟောင်းဗိသုကာလက်ရာများ</p>
-                                <div class="card-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-calendar-alt"></i>
-                                        <span>၁၁ ရာစု</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span>မန္တလေးတိုင်း</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="site-card">
-                            <img src="/api/placeholder/300/200" alt="မန္တလေးနန်းတွင်း">
-                            <div class="card-content">
-                                <h4>မန္တလေးနန်းတွင်း</h4>
-                                <p>နောက်ဆုံးမြန်မာ့ဘုရင်များ စိုးစံရာနန်းတော်</p>
-                                <div class="card-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-calendar-alt"></i>
-                                        <span>၁၈၅၇</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span>မန္တလေးမြို့</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="site-card">
-                            <img src="/api/placeholder/300/200" alt="ရွှေတိဂုံစေတီ">
-                            <div class="card-content">
-                                <h4>ရွှေတိဂုံစေတီတော်</h4>
-                                <p>နှစ်ပေါင်း ၂၅၀၀ ကျော်သက်တမ်းရှိ ဗုဒ္ဓဘာသာဝင်များ ဖူးမြော်ရာနေရာ</p>
-                                <div class="card-stats">
-                                    <div class="stat">
-                                        <i class="fas fa-calendar-alt"></i>
-                                        <span>ဘီစီ ၅၈၆</span>
-                                    </div>
-                                    <div class="stat">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        <span>ရန်ကုန်မြို့</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fun-facts">
-                    <h3 class="section-title">စိတ်ဝင်စားဖွယ် အချက်အလက်များ</h3>
-                    <div class="facts-grid">
-                        <div class="fact-item">
-                            <i class="fas fa-temple"></i>
-                            <h4>စေတီပုထိုး</h4>
-                            <p>ပုဂံမြို့တွင် စေတီပုထိုးပေါင်း ၄၀၀၀ ကျော်ရှိသည်</p>
-                        </div>
-                        <div class="fact-item">
-                            <i class="fas fa-book-open"></i>
-                            <h4>ကမ္ဘာ့အကြီးဆုံး စာအုပ်</h4>
-                            <p>ကุတိုးကျောက်စာသည် ကမ္ဘာ့အကြီးဆုံး စာအုပ်ကြီးဖြစ်သည်</p>
-                        </div>
-                        <div class="fact-item">
-                            <i class="fas fa-bell"></i>
-                            <h4>ကမ္ဘာ့အကြီးဆုံး ခေါင်းလောင်း</h4>
-                            <p>မင်းကွန်းခေါင်းလောင်းကြီးသည် ကမ္ဘာ့အကြီးဆုံး အသုံးပြုနိုင်သော ခေါင်းလောင်းဖြစ်သည်</p>
-                        </div>
+                    <div class="image-content">
+                        <img src="/api/placeholder/500/300" alt="ရှေးဟောင်းမြို့တော်" class="hover-zoom">
                     </div>
                 </div>
             </div>
@@ -196,336 +54,14 @@
     <footer>
         <div class="footer-content">
             <div class="social-links">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"></a>
+                <a href="#" class="social-icon"></a>
+                <a href="#" class="social-icon"></a>
             </div>
-             <div class="footer-nav">
-                <a href="index.html">ပင်မစာမျက်နှာ</a>
-                <a href="history.html">သမိုင်း</a>
-                <a href="culture.html">ယဉ်ကျေးမှု</a>
-                <a href="places.html">နေရာဒေသများ</a>
-                <a href="food.html">အစားအသောက်</a>
-            </div>
-            <div class="footer-info">
-                <div class="contact-info">
-                    <h4>ဆက်သွယ်ရန်</h4>
-                    <p><i class="fas fa-envelope"></i> info@myanmartourism.com</p>
-                    <p><i class="fas fa-phone"></i> +95 1 234 5678</p>
-                    <p><i class="fas fa-map-marker-alt"></i> ရန်ကုန်မြို့၊ မြန်မာနိုင်ငံ</p>
-                </div>
-                <div class="newsletter">
-                    <h4>သတင်းလွှာ</h4>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="သင့်အီးမေးလ်လိပ်စာ" required>
-                        <button type="submit">စာရင်းသွင်းမည်</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 မြန်မာနိုင်ငံ။ မူပိုင်ခွင့်လက်ဝယ်ရှိသည်။</p>
-                <div class="footer-links">
-                    <a href="#">ကိုယ်ရေးအချက်အလက်မူဝါဒ</a>
-                    <a href="#">စည်းမျဉ်းစည်းကမ်းများ</a>
-                    <a href="#">မေးလေ့ရှိသောမေးခွန်းများ</a>
-                </div>
-            </div>
+            <p>© 2024 မြန်မာနိုင်ငံ။ မူပိုင်ခွင့်လက်ဝယ်ရှိသည်။</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-.page-header {
-    height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url('/api/placeholder/1920/1080');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.header-content {
-    max-width: 800px;
-    padding: 2rem;
-}
-
-.header-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    animation: fadeIn 1s ease-out;
-}
-
-.header-content p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    animation: fadeIn 1s ease-out 0.5s forwards;
-}
-
-/* Timeline Styles */
-.history-timeline {
-    margin: 4rem 0;
-}
-
-.timeline {
-    position: relative;
-    padding: 2rem 0;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 100%;
-    background: var(--primary-color);
-    opacity: 0.3;
-}
-
-.timeline-item {
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.timeline-marker {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    border: 4px solid white;
-    box-shadow: 0 0 0 4px rgba(45, 55, 72, 0.1);
-}
-
-.timeline-content {
-    width: 45%;
-    margin-left: auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.timeline-date {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--primary-color);
-    color: white;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.timeline-image {
-    width: 100%;
-    border-radius: 0.5rem;
-    margin: 1rem 0;
-}
-
-.timeline-facts {
-    list-style: none;
-    margin-top: 1rem;
-    padding: 1rem;
-    background: rgba(45, 55, 72, 0.05);
-    border-radius: 0.5rem;
-}
-
-.timeline-facts li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
-}
-
-.timeline-facts i {
-    color: var(--primary-color);
-}
-
-/* Historical Sites Grid */
-.sites-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.site-card {
-    background: white;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.site-card:hover {
-    transform: translateY(-5px);
-}
-
-.site-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.stat {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.stat i {
-    color: var(--primary-color);
-}
-
-/* Fun Facts Section */
-.fun-facts {
-    margin-top: 4rem;
-}
-
-.facts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.fact-item {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.fact-item:hover {
-    transform: translateY(-5px);
-}
-
-.fact-item i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-/* Enhanced Footer Styles */
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 3rem 2rem;
-}
-
-.footer-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.footer-nav a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-    color: white;
-}
-
-.newsletter-form {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.newsletter-form input {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    flex: 1;
-}
-
-.newsletter-form button {
-    padding: 0.5rem 1rem;
-    background: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.newsletter-form button:hover {
-    background: var(--secondary-color);
-}
-
-.footer-bottom {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-}
-
-.footer-links {
-    margin-top: 1rem;
-}
-
-.footer-links a {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    margin: 0 1rem;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .timeline::before {
-        left: 2rem;
-    }
-
-    .timeline-marker {
-        left: 2rem;
-    }
-
-    .timeline-content {
-        width: calc(100% - 4rem);
-        margin-left: 4rem;
-    }
-
-    .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 4rem;
-        margin-right: 0;
-    }
-
-    .header-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .facts-grid {
-        grid-template-columns: 1fr;
-    }
-}
